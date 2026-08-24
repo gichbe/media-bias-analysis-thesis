@@ -1,0 +1,19 @@
+{
+  "political_map": "Insert the corpus-specific political map used for the evaluation.",
+  "individuals": [
+    "actor_a",
+    "actor_b"
+  ],
+  "parties": [
+    "group_a",
+    "group_b"
+  ],
+  "institutions": [
+    "institution_a",
+    "institution_b"
+  ],
+  "normalization": {
+    "actor_alias_a": "actor_a",
+    "group_alias_a": "group_a"
+  }
+}
