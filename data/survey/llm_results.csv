@@ -1,0 +1,91 @@
+model,stimulus_id,run,tone,framing,bias,evaluative_source,status
+Claude Fable 5,P1A,1,-2.0,moralni,5.0,medij,ok
+Claude Fable 5,P1A,2,-2.0,odgovornost,5.0,medij,ok
+Claude Fable 5,P1A,3,-2.0,moralni,5.0,medij,ok
+Claude Fable 5,P1B,1,-1.0,konflikt,3.0,citirani_akter,ok
+Claude Fable 5,P1B,2,-1.0,konflikt,3.0,citirani_akter,ok
+Claude Fable 5,P1B,3,-1.0,konflikt,3.0,citirani_akter,ok
+Claude Fable 5,P2A,1,-1.0,odgovornost,3.0,citirani_akter,ok
+Claude Fable 5,P2A,2,-1.0,odgovornost,2.0,citirani_akter,ok
+Claude Fable 5,P2A,3,-1.0,odgovornost,2.0,citirani_akter,ok
+Claude Fable 5,P2B,1,0.0,proceduralni,2.0,citirani_akter,ok
+Claude Fable 5,P2B,2,0.0,proceduralni,2.0,citirani_akter,ok
+Claude Fable 5,P2B,3,0.0,proceduralni,2.0,citirani_akter,ok
+Claude Fable 5,P3A,1,1.0,proceduralni,3.0,medij,ok
+Claude Fable 5,P3A,2,2.0,moralni,3.0,medij,ok
+Claude Fable 5,P3A,3,2.0,moralni,3.0,medij,ok
+Claude Fable 5,P3B,1,-1.0,proceduralni,2.0,medij,ok
+Claude Fable 5,P3B,2,-1.0,proceduralni,2.0,medij,ok
+Claude Fable 5,P3B,3,-1.0,proceduralni,2.0,medij,ok
+Claude Fable 5,P4A,1,0.0,proceduralni,1.0,citirani_akter,ok
+Claude Fable 5,P4A,2,0.0,proceduralni,1.0,nema,ok
+Claude Fable 5,P4A,3,0.0,proceduralni,1.0,citirani_akter,ok
+Claude Fable 5,P4B,1,-1.0,konflikt,2.0,citirani_akter,ok
+Claude Fable 5,P4B,2,-1.0,konflikt,2.0,citirani_akter,ok
+Claude Fable 5,P4B,3,-1.0,konflikt,2.0,citirani_akter,ok
+Claude Fable 5,P5A,1,2.0,nacionalni,3.0,medij,ok
+Claude Fable 5,P5A,2,2.0,proceduralni,2.0,medij,ok
+Claude Fable 5,P5A,3,2.0,proceduralni,3.0,medij,ok
+Claude Fable 5,P5B,1,0.0,proceduralni,1.0,nema,ok
+Claude Fable 5,P5B,2,0.0,proceduralni,1.0,nema,ok
+Claude Fable 5,P5B,3,0.0,proceduralni,1.0,nema,ok
+GPT-5.6 Sol,P1A,1,-2.0,moralni,5.0,medij,ok
+GPT-5.6 Sol,P1A,2,-2.0,moralni,4.0,medij,ok
+GPT-5.6 Sol,P1A,3,-2.0,moralni,5.0,medij,ok
+GPT-5.6 Sol,P1B,1,-1.0,konflikt,2.0,citirani_akter,ok
+GPT-5.6 Sol,P1B,2,-1.0,odgovornost,3.0,citirani_akter,ok
+GPT-5.6 Sol,P1B,3,-1.0,konflikt,3.0,citirani_akter,ok
+GPT-5.6 Sol,P2A,1,-1.0,odgovornost,3.0,citirani_akter,ok
+GPT-5.6 Sol,P2A,2,-1.0,nacionalni,3.0,citirani_akter,ok
+GPT-5.6 Sol,P2A,3,-1.0,odgovornost,3.0,citirani_akter,ok
+GPT-5.6 Sol,P2B,1,1.0,proceduralni,2.0,citirani_akter,ok
+GPT-5.6 Sol,P2B,2,1.0,proceduralni,2.0,citirani_akter,ok
+GPT-5.6 Sol,P2B,3,1.0,proceduralni,2.0,citirani_akter,ok
+GPT-5.6 Sol,P3A,1,1.0,proceduralni,2.0,medij,ok
+GPT-5.6 Sol,P3A,2,1.0,proceduralni,2.0,medij,ok
+GPT-5.6 Sol,P3A,3,1.0,proceduralni,2.0,medij,ok
+GPT-5.6 Sol,P3B,1,-1.0,proceduralni,2.0,medij,ok
+GPT-5.6 Sol,P3B,2,-1.0,proceduralni,2.0,medij,ok
+GPT-5.6 Sol,P3B,3,-1.0,proceduralni,2.0,medij,ok
+GPT-5.6 Sol,P4A,1,0.0,proceduralni,1.0,nema,ok
+GPT-5.6 Sol,P4A,2,0.0,proceduralni,1.0,nema,ok
+GPT-5.6 Sol,P4A,3,0.0,proceduralni,1.0,nema,ok
+GPT-5.6 Sol,P4B,1,-1.0,konflikt,2.0,citirani_akter,ok
+GPT-5.6 Sol,P4B,2,-1.0,konflikt,2.0,citirani_akter,ok
+GPT-5.6 Sol,P4B,3,-1.0,konflikt,2.0,citirani_akter,ok
+GPT-5.6 Sol,P5A,1,2.0,proceduralni,2.0,medij,ok
+GPT-5.6 Sol,P5A,2,2.0,proceduralni,2.0,medij,ok
+GPT-5.6 Sol,P5A,3,2.0,proceduralni,2.0,medij,ok
+GPT-5.6 Sol,P5B,1,0.0,proceduralni,1.0,nema,ok
+GPT-5.6 Sol,P5B,2,0.0,proceduralni,1.0,nema,ok
+GPT-5.6 Sol,P5B,3,0.0,proceduralni,1.0,nema,ok
+Qwen 3.5 9B,P1A,1,-2.0,konflikt,5.0,medij,ok
+Qwen 3.5 9B,P1A,2,-2.0,proceduralni,4.0,medij,ok
+Qwen 3.5 9B,P1A,3,-1.0,proceduralni,3.0,medij,ok
+Qwen 3.5 9B,P1B,1,-1.0,proceduralni,3.0,citirani_akter,ok
+Qwen 3.5 9B,P1B,2,-1.0,konflikt,3.0,medij,ok
+Qwen 3.5 9B,P1B,3,-1.0,konflikt,4.0,citirani_akter,ok
+Qwen 3.5 9B,P2A,1,-1.0,konflikt,3.0,medij,ok
+Qwen 3.5 9B,P2A,2,-1.0,konflikt,3.0,medij,ok
+Qwen 3.5 9B,P2A,3,-1.0,konflikt,3.0,citirani_akter,ok
+Qwen 3.5 9B,P2B,1,-1.0,odgovornost,2.0,medij,ok
+Qwen 3.5 9B,P2B,2,1.0,proceduralni,2.0,citirani_akter,ok
+Qwen 3.5 9B,P2B,3,0.0,proceduralni,1.0,citirani_akter,ok
+Qwen 3.5 9B,P3A,1,0.0,proceduralni,1.0,nema,ok
+Qwen 3.5 9B,P3A,2,0.0,nacionalni,2.0,medij,ok
+Qwen 3.5 9B,P3A,3,0.0,proceduralni,1.0,nema,ok
+Qwen 3.5 9B,P3B,1,0.0,proceduralni,1.0,nema,ok
+Qwen 3.5 9B,P3B,2,-1.0,neutralni,2.0,medij,ok
+Qwen 3.5 9B,P3B,3,-1.0,neutralni,3.0,medij,ok
+Qwen 3.5 9B,P4A,1,-1.0,proceduralni,3.0,oba,ok
+Qwen 3.5 9B,P4A,2,-1.0,proceduralni,3.0,citirani_akter,ok
+Qwen 3.5 9B,P4A,3,-1.0,proceduralni,2.0,oba,ok
+Qwen 3.5 9B,P4B,1,-1.0,konflikt,3.0,citirani_akter,ok
+Qwen 3.5 9B,P4B,2,-1.0,proceduralni,3.0,medij,ok
+Qwen 3.5 9B,P4B,3,-1.0,konflikt,2.0,medij,ok
+Qwen 3.5 9B,P5A,1,1.0,proceduralni,2.0,medij,ok
+Qwen 3.5 9B,P5A,2,1.0,proceduralni,2.0,medij,ok
+Qwen 3.5 9B,P5A,3,1.0,proceduralni,2.0,medij,ok
+Qwen 3.5 9B,P5B,1,-1.0,proceduralni,2.0,oba,ok
+Qwen 3.5 9B,P5B,2,0.0,proceduralni,1.0,nema,ok
+Qwen 3.5 9B,P5B,3,-1.0,proceduralni,3.0,medij,ok
