@@ -1,0 +1,18 @@
+model,filename
+GPT-5 Nano,gpt_5_nano.csv
+GPT-5.4 Nano,gpt_5_4_nano.csv
+GPT-5.4 Mini,gpt_5_4_mini.csv
+GPT-5.6 Luna,gpt_5_6_luna.csv
+GPT-5.6 Sol,gpt_5_6_sol.csv
+GPT-5.6 Terra,gpt_5_6_terra.csv
+Claude Haiku 4.5,claude_haiku_4_5.csv
+Claude Sonnet 5,claude_sonnet_5.csv
+Claude Fable 5,claude_fable_5.csv
+Gemini 3.1 Flash-Lite,gemini_3_1_flash_lite.csv
+Gemini 3.1 Pro,gemini_3_1_pro.csv
+Grok 4.20 Non-Reasoning,grok_4_20_non_reasoning.csv
+Grok 4.20 Reasoning,grok_4_20_reasoning.csv
+Grok 4.5,grok_4_5.csv
+Kimi K2 Thinking,kimi_k2_thinking.csv
+Qwen 3.5 9B,qwen_3_5_9b.csv
+Gemma 3 12B,gemma_3_12b.csv
