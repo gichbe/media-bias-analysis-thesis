@@ -6,7 +6,7 @@ Kod, pseudonimizovani anotacijski podaci i dodatni materijali za završni rad o 
 
 ```text
 analysis/          Skripte za statističku analizu i generisanje figura
-data/annotations/ Pseudonimizovane ljudske i LLM anotacije
+data/annotations/  Pseudonimizovane ljudske i LLM anotacije
 docs/              Anotacijski priručnik
 src/               LLM evaluator
 ```
