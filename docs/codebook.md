@@ -1,307 +1,272 @@
-# Priručnik za anotaciju političkog izvještavanja
+# Annotation Manual for Political News Coverage
 
-**Konačna verzija anotacijskog protokola**
+**Final version of the annotation protocol**
 
----
+## 1. Purpose of this document
 
-## 1. Svrha dokumenta
+This manual defines the rules for annotating political articles from online
+media in Bosnia and Herzegovina.
 
-Ovaj priručnik definiše pravila za anotaciju političkih članaka iz
-bosanskohercegovačkih internetskih medija.
+Each article is assessed along five dimensions:
 
-Svaki članak procjenjuje se kroz pet osnovnih dimenzija:
+1. dominant political actor;
+2. tone toward the dominant political actor;
+3. reporting frame (framing);
+4. balance; and
+5. political lean.
 
-1. dominantni politički akter,
-2. ton prema dominantnom političkom akteru,
-3. okvir izvještavanja (framing),
-4. balansiranost,
-5. politička usmjerenost.
+Every dimension is assessed from the content of the article itself and the
+rules in this document.
 
-Sve dimenzije procjenjuju se na osnovu sadržaja konkretnog članka i
-pravila definisanih ovim dokumentom.
+## 2. Unit of analysis
 
----
+One article constitutes one unit of analysis.
 
-## 2. Jedinica analize
+The annotation considers:
 
-Jedan članak predstavlja jednu jedinicu analize.
+- the headline;
+- the subheading or lead, if present;
+- the main body text; and
+- quotations and sources included in the article.
 
-Pri anotaciji se uzimaju u obzir:
+It does not consider:
 
-- naslov članka,
-- podnaslov ili lead, ako postoji,
-- glavno tijelo teksta,
-- citati i izvori navedeni u članku.
+- reader comments;
+- related or recommended articles;
+- advertisements;
+- page-navigation elements; or
+- information not contained in the article being analyzed.
 
-Ne uzimaju se u obzir:
+The annotation is based on how the content is presented in the particular
+article, not on the annotator's personal political views.
 
-- komentari čitalaca,
-- povezani ili preporučeni članci,
-- reklamni sadržaj,
-- navigacijski elementi stranice,
-- informacije koje nisu sadržane u analiziranom članku.
+## 3. General annotation rules
 
-Anotacija se zasniva na tome kako je sadržaj predstavljen u konkretnom
-članku, a ne na ličnom političkom stavu anotatora.
+Read the entire article before assigning labels.
 
----
+Assess the dimensions in the following logical order:
 
-## 3. Opća pravila anotacije
+1. identify the dominant political actor;
+2. assess the tone toward that actor;
+3. identify the dominant reporting frame;
+4. assess balance; and
+5. assess political lean.
 
-Prije unošenja oznaka potrebno je pročitati kompletan članak.
+Assess each dimension independently. In particular, do not conflate different
+dimensions. For example:
 
-Dimenzije se procjenjuju sljedećim logičkim redoslijedom:
+- a negative tone toward a political actor does not automatically mean that
+  the article supports the actor's opposition;
+- a neutral tone does not automatically make an article balanced; and
+- the presence of several sources does not automatically mean that different
+  political perspectives are represented.
 
-1. odrediti dominantnog političkog aktera,
-2. procijeniti ton prema tom akteru,
-3. odrediti dominantni okvir izvještavanja,
-4. procijeniti balansiranost,
-5. procijeniti političku usmjerenost.
+When assessing tone, first determine its direction—negative, neutral, or
+positive—and then determine the intensity of the treatment. Do not choose a
+less extreme value merely because it appears safer or because extreme values
+are rarer. Base intensity on the strength of the editorial signals in the
+article.
 
-Svaka dimenzija procjenjuje se zasebno.
+## 4. Dominant political actor
 
-Posebno je važno ne poistovjećivati različite dimenzije. Na primjer:
+The dominant political actor is the person, political organization,
+institution, or other political entity that is the article's main subject.
 
-- negativan ton prema političkom akteru ne znači automatski da članak
-  podržava njegovu opoziciju;
-- neutralan ton ne znači automatski da je članak balansiran;
-- prisustvo više izvora ne znači automatski da su predstavljene različite
-  političke perspektive.
+As a rule, select one dominant actor. If two or more actors genuinely receive
+equal treatment as the article's main subject, they may be listed together.
 
-Kod procjene tona najprije se određuje smjer kao negativan, neutralan ili
-pozitivan, a zatim intenzitet tretmana. Manje ekstremna vrijednost ne bira
-se samo zato što djeluje sigurnije ili zato što su ekstremne vrijednosti
-rjeđe; intenzitet treba odrediti prema jačini uredničkih signala prisutnih
-u članku.
+The dominant actor is not automatically:
 
----
+- the person who made a statement;
+- the person quoted most often; or
+- the politician mentioned first.
 
-## 4. Dominantni politički akter
+Determine whom or what the article is primarily about. Consider:
 
-Dominantni politički akter je osoba, politička organizacija, institucija
-ili druga politička cjelina koja predstavlja glavni predmet članka.
+- the headline and lead;
+- the amount of space devoted to the actor;
+- the article's central topic; and
+- the action or event around which the article is organized.
 
-U pravilu se bira jedan dominantni akter. Ako su dva ili više aktera
-stvarno ravnopravno zastupljena kao glavni predmet članka, mogu se navesti
-zajedno.
+The permitted dominant-actor labels are defined in advance for the particular
+article set. They include politicians, political parties, institutions, and
+other political entities relevant to the corpus. Annotators must select the
+dominant actor exclusively from this predefined label set.
 
-Dominantni akter nije automatski:
+Keep the label at the level on which the article is actually focused. If the
+article is primarily about an institution, select the institution; if it is
+primarily about a particular politician, select the politician; and if it is
+primarily about a political party, select the party. A person making a
+statement must not replace an institution or party as the dominant actor when
+that person is not the article's real subject.
+
+## 5. Tone
+
+### 5.1. Definition
+
+Tone describes how the dominant political actor is presented in the article.
+Always assess tone in relation to the previously identified dominant actor.
+
+Distinguish between:
+
+- the article's tone toward the dominant actor; and
+- the tone of statements that the dominant actor directs at other people.
+
+For example, the fact that a politician sharply criticizes another politician
+does not, by itself, mean that the article has a negative tone toward the
+politician making the criticism.
 
-- osoba koja je dala izjavu,
-- osoba koja je najčešće citirana,
-- političar koji se prvi pojavljuje u tekstu.
+### 5.2. Tone scale
 
-Potrebno je procijeniti o kome ili čemu članak prvenstveno govori.
+- **-2 — Very negative:** markedly negative editorial treatment, forceful
+  discrediting, or highly accusatory wording.
+- **-1 — Negative:** clearly critical or unfavorable treatment of the actor,
+  without strongly discrediting or propagandistic presentation.
+- **0 — Neutral:** predominantly factual or procedural presentation without
+  clearly positive or negative treatment.
+- **+1 — Positive:** clearly favorable treatment of the actor, or uncritical
+  space for the actor's position, without strongly promotional or celebratory
+  treatment.
+- **+2 — Very positive:** markedly laudatory, affirmative, idealizing, or
+  strongly promotional treatment of the actor.
 
-Pri tome se uzimaju u obzir:
+When distinguishing negative from very negative tone, or positive from very
+positive tone, determine whether evaluative content comes only from a quoted
+source or whether the outlet adopts, amplifies, or further shapes it. Harsh
+criticism clearly attributed to a source does not, by itself, constitute very
+negative tone. Similarly, merely relaying a favorable message without
+criticism does not automatically constitute very positive tone.
 
-- naslov i lead,
-- količina prostora posvećena akteru,
-- centralna tema članka,
-- radnja ili događaj oko kojeg je članak organizovan.
-
-Dozvoljene oznake dominantnog aktera definišu se unaprijed za konkretni
-skup članaka i obuhvataju političare, političke stranke, institucije i
-druge političke cjeline relevantne za analizirani korpus.
-
-Anotator bira dominantnog aktera isključivo iz tako definisanog skupa oznaka.
-
-Pri izboru dominantnog aktera treba zadržati nivo na kojem je članak stvarno
-fokusiran. Ako je članak prvenstveno o instituciji, bira se institucija; ako
-je prvenstveno o konkretnom političaru, bira se političar; a ako je prvenstveno
-o političkoj stranci, bira se stranka. Osoba koja daje izjavu ne treba
-zamijeniti instituciju ili stranku kao dominantnog aktera ako ona nije stvarni
-predmet članka.
-
----
-
-## 5. Ton
-
-### 5.1. Definicija
-
-Ton predstavlja način na koji je dominantni politički akter predstavljen
-u članku.
-
-Ton se uvijek procjenjuje prema prethodno određenom dominantnom akteru.
-
-Važno je razlikovati:
-
-- ton članka prema dominantnom akteru i
-- ton izjava koje dominantni akter upućuje drugim osobama.
-
-Na primjer, činjenica da političar u članku oštro kritikuje drugog političara
-ne znači sama po sebi da članak ima negativan ton prema političaru koji je
-iznio kritiku.
-
-### 5.2. Skala tona
-
-- -2 - Vrlo negativan (Izrazito negativan urednički tretman, snažno
-  diskreditovanje ili izrazito optužujuće formulacije)
-
-- -1 - Negativan (Jasno kritičan ili nepovoljan tretman aktera, bez
-  izrazito diskreditirajućeg ili propagandnog predstavljanja)
-
-- 0 - Neutralan (Pretežno faktografsko ili proceduralno predstavljanje
-  bez jasnog pozitivnog ili negativnog tretmana)
-
-- +1 - Pozitivan (Jasno povoljan tretman aktera ili nekritičko davanje
-  prostora njegovoj poziciji, bez izrazito promotivnog ili slavljeničkog
-  tretmana)
-
-- +2 - Vrlo pozitivan (Izrazito pohvalan, afirmativan, idealizirajući ili
-  snažno promotivan tretman aktera)
-
-Pri razlikovanju negativnog i vrlo negativnog, odnosno pozitivnog i vrlo
-pozitivnog tona, važno je utvrditi da li evaluativni sadržaj potiče samo
-od citiranog izvora ili ga sam medij usvaja, pojačava ili dodatno oblikuje.
-Teška kritika koja je jasno pripisana izvoru ne predstavlja sama po sebi
-vrlo negativan ton. Slično tome, samo nekritičko prenošenje povoljne poruke
-ne predstavlja automatski vrlo pozitivan ton.
-
-Naslov i lead imaju veliku uredničku težinu. Izrazito negativne ili pozitivne
-vrijednosti opravdane su kada postoji posebno snažan urednički signal ili
-više nezavisnih snažnih signala koji kroz članak dosljedno grade takav tretman.
-Ponavljanje iste tvrdnje u naslovu, leadu i tekstu ne treba automatski
-posmatrati kao više nezavisnih signala.
-
-Pri procjeni se uzima u obzir kompletan članak, uz posebnu pažnju na naslov,
-lead i formulacije kojima se dominantni akter opisuje.
-
----
-
-## 6. Okvir izvještavanja (framing)
-
-### 6.1. Definicija
-
-Okvir izvještavanja označava dominantan način na koji je politički događaj
-predstavljen i interpretativno organizovan.
-
-Ako se u članku pojavljuje više mogućih okvira, bira se onaj koji ima
-dominantnu ulogu u predstavljanju događaja.
-
-Pri procjeni se uzima u obzir cijeli članak, posebno naslov i uvodni dio.
-
-### 6.2. Kategorije
-
-- konflikt - Naglasak na političkom sukobu, neslaganju, suprotstavljenim
-  stranama ili nadmetanju
-
-- odgovornost - Naglasak na pitanju odgovornosti, krivice, uzroka ili
-  posljedica nečijeg djelovanja
-
-- ekonomski - Događaj se prvenstveno predstavlja kroz novac, troškove,
-  ekonomsku korist ili ekonomske posljedice
-
-- moralni - Događaj se dominantno predstavlja kroz moralne vrijednosti,
-  etičku osudu ili pitanje ispravnosti
-
-- proceduralni - Fokus je na institucijama, zakonima, pravilima, odlukama,
-  glasanjima ili drugim formalnim postupcima
-
-- nacionalni - Naglasak je na nacionalnom ili etničkom identitetu,
-  odnosima ili kolektivnim interesima
-
-- neutralan - Nijedan od navedenih interpretativnih okvira nije jasno
-  dominantan; članak je pretežno faktografski
-
----
-
-## 7. Balansiranost
-
-### 7.1. Definicija
-
-Balansiranost označava u kojoj mjeri članak predstavlja relevantne različite
-političke perspektive o događaju.
-
-Ne procjenjuje se samo broj citiranih osoba ili izvora. Više izvora koji
-zastupaju istu političku poziciju ne predstavljaju automatski više
-perspektiva.
-
-Pozadinske činjenice same po sebi ne predstavljaju dodatnu političku
-perspektivu. Jasno citirana ili prepričana suprotna politička pozicija
-računa se kao druga perspektiva, čak i kada nije direktan odgovor na glavnu
-izjavu. Samo spominjanje druge strane bez njenog stava ili argumenta ne
-predstavlja dodatnu perspektivu.
-
-Faktografski ili proceduralno napisan članak može biti jednostran ako ne
-sadrži više relevantnih političkih perspektiva. Neutralnost tona zato se
-ne poistovjećuje s balansiranošću.
-
-### 7.2. Skala
-
-- 0 - Jednostrano (Predstavljena je samo jedna relevantna politička
-  perspektiva)
-
-- 1 - Djelimično balansirano (Prisutna je dodatna ili suprotstavljena
-  perspektiva, ali dobija znatno manje prostora ili nije jednako razvijena)
-
-- 2 - Balansirano (Relevantne različite perspektive predstavljene su
-  približno ravnopravno)
-
----
-
-## 8. Politička usmjerenost
-
-### 8.1. Definicija
-
-Politička usmjerenost označava političku ili širu političko-identitetsku
-opciju kojoj način predstavljanja u članku ide u prilog.
-
-Procjena se odnosi na način predstavljanja sadržaja u konkretnom članku, a
-ne na pretpostavljenu opću političku orijentaciju medija.
-
-Pri određivanju političke usmjerenosti potrebno je utvrditi postoji li
-urednički signal favorizovanja određene političke opcije. Takvi signali mogu
-uključivati način oblikovanja naslova, jednostrano pojačavanje političke ili
-nacionalne poruke, selekciju citata, prostora i konteksta te vrijednosno
-obojen jezik autora.
-
-Sama jednostranost članka nije dovoljna za određivanje političke usmjerenosti.
-Isto tako, pozitivan ili negativan ton prema pojedinom akteru ne znači
-automatski da članak ima odgovarajuću političku usmjerenost.
-
-Suho prenošenje sudske, institucionalne ili proceduralne odluke smatra se
-neutralnim ako dodatni urednički tretman ne favorizuje određenu političku
-opciju, čak i kada sam ishod odluke politički koristi ili šteti nekoj strani.
-
-### 8.2. Kategorije
-
-- neutralan - Nema jasnih signala favorizovanja političke opcije
-
-- nejasno - U članku postoje stvarno kontradiktorni urednički signali zbog
-  kojih nije moguće jednoznačno odrediti političku usmjerenost
-
-- pro_vlast - Način predstavljanja ide u prilog vladajućim političkim
-  strukturama na relevantnom nivou
-
-- pro_opozicija - Način predstavljanja ide u prilog opozicionim političkim
-  strukturama
-
-- pro_bosnjacka_opcija - Način predstavljanja ide u prilog bošnjačkim
-  političkim akterima ili interesima
-
-- pro_srpska_opcija - Način predstavljanja ide u prilog srpskim političkim
-  akterima ili interesima
-
-- pro_hrvatska_opcija - Način predstavljanja ide u prilog hrvatskim
-  političkim akterima ili interesima
-
-- pro_gradjanska_opcija - Način predstavljanja ide u prilog građanskim ili
-  multietničkim političkim opcijama
-
----
-
-## 9. Završna kontrola prije slanja anotacije
-
-Prije potvrde anotacije provjeriti:
-
-1. Da li je dominantni akter odabran iz unaprijed definisanog skupa
-   dozvoljenih oznaka?
-2. Da li se ton odnosi upravo na tog aktera?
-3. Da li je odabran jedan dominantni okvir izvještavanja?
-4. Da li balansiranost predstavlja različite perspektive, a ne samo broj
-   izvora?
-5. Da li je politička usmjerenost određena na osnovu konkretnog članka?
-6. Da li su `neutralan` i `nejasno` pravilno razlikovani?
-7. Da li je procjena zasnovana na sadržaju članka, a ne na ličnom političkom
-   stavu?
+The headline and lead carry substantial editorial weight. Extreme negative or
+positive values are justified when there is an especially strong editorial
+signal or several independent strong signals that consistently create such
+treatment across the article. Repetition of the same claim in the headline,
+lead, and body should not automatically be counted as several independent
+signals.
+
+Assess the entire article, paying particular attention to the headline, lead,
+and wording used to describe the dominant actor.
+
+## 6. Reporting frame (framing)
+
+### 6.1. Definition
+
+The reporting frame is the dominant way in which a political event is
+presented and interpretively organized.
+
+If several possible frames appear, select the one that has the dominant role
+in presenting the event. Consider the whole article, especially the headline
+and introduction.
+
+### 6.2. Categories
+
+The Bosnian tokens below are retained in the datasets and evaluator output:
+
+- `konflikt` — **conflict:** emphasis on political conflict, disagreement,
+  opposing sides, or competition.
+- `odgovornost` — **responsibility:** emphasis on responsibility, blame,
+  causes, or the consequences of someone's actions.
+- `ekonomski` — **economic:** the event is presented primarily in terms of
+  money, costs, economic benefit, or economic consequences.
+- `moralni` — **moral:** the event is presented mainly through moral values,
+  ethical condemnation, or questions of right and wrong.
+- `proceduralni` — **procedural:** focus on institutions, laws, rules,
+  decisions, votes, or other formal procedures.
+- `nacionalni` — **national/ethnic:** emphasis on national or ethnic identity,
+  relations, or collective interests. In the BiH context, *national* often
+  refers to the constituent peoples and therefore carries an ethnic as well as
+  a national meaning.
+- `neutralan` — **neutral:** none of the interpretive frames above clearly
+  dominates; the article is predominantly factual.
+
+## 7. Balance
+
+### 7.1. Definition
+
+Balance indicates the extent to which an article presents different relevant
+political perspectives on an event.
+
+Do not assess only the number of people or sources quoted. Several sources
+representing the same political position do not automatically amount to
+several perspectives.
+
+Background facts do not themselves constitute an additional political
+perspective. A clearly quoted or paraphrased opposing political position
+counts as a second perspective even when it is not a direct response to the
+main statement. Merely mentioning another side without presenting its view or
+argument does not constitute an additional perspective.
+
+A factually or procedurally written article can be one-sided if it does not
+contain several relevant political perspectives. Neutral tone must therefore
+not be equated with balance.
+
+### 7.2. Scale
+
+- **0 — One-sided:** only one relevant political perspective is presented.
+- **1 — Partly balanced:** an additional or opposing perspective is present,
+  but receives substantially less space or is less fully developed.
+- **2 — Balanced:** relevant different perspectives are presented with
+  approximately equal weight.
+
+## 8. Political lean
+
+### 8.1. Definition
+
+Political lean identifies the political option, or broader political-identity
+option, favored by the article's manner of presentation.
+
+Assess the presentation in the particular article, not the outlet's presumed
+general political orientation.
+
+Determine whether there is an editorial signal favoring a political option.
+Such signals can include the construction of the headline; one-sided
+amplification of a political or national/ethnic message; the selection of
+quotations, space, and context; and evaluatively loaded language used by the
+author.
+
+One-sidedness alone is not sufficient to establish political lean. Likewise,
+a positive or negative tone toward an individual actor does not automatically
+give an article a corresponding political lean.
+
+A plain account of a judicial, institutional, or procedural decision is
+neutral if no additional editorial treatment favors a political option, even
+when the outcome itself benefits or harms one side politically.
+
+### 8.2. Categories
+
+The original Bosnian tokens are retained in the data:
+
+- `neutralan` — **neutral:** no clear signals favor a political option.
+- `nejasno` — **unclear:** genuinely contradictory editorial signals prevent
+  an unambiguous assessment of political lean.
+- `pro_vlast` — **pro-government:** the presentation favors governing
+  political structures at the relevant level of government.
+- `pro_opozicija` — **pro-opposition:** the presentation favors opposition
+  political structures.
+- `pro_bosnjacka_opcija` — **pro-Bosniak option:** the presentation favors
+  Bosniak political actors or interests.
+- `pro_srpska_opcija` — **pro-Serb option:** the presentation favors Serb
+  political actors or interests.
+- `pro_hrvatska_opcija` — **pro-Croat option:** the presentation favors Croat
+  political actors or interests.
+- `pro_gradjanska_opcija` — **pro-civic option:** the presentation favors civic
+  or multiethnic political options. Here, *civic* (`gradjanska`/`građanska`)
+  denotes a non-ethnic or multiethnic political orientation in BiH discourse.
+
+The identity-based categories describe the direction of an article's
+editorial treatment; they do not label an outlet or an annotator's own views.
+
+## 9. Final check before submitting an annotation
+
+Before confirming the annotation, check:
+
+1. Was the dominant actor selected from the predefined set of permitted
+   labels?
+2. Does the tone refer specifically to that actor?
+3. Was one dominant reporting frame selected?
+4. Does the balance rating reflect different perspectives, rather than merely
+   the number of sources?
+5. Was political lean determined from the particular article?
+6. Were `neutralan` (neutral) and `nejasno` (unclear) distinguished correctly?
+7. Is the assessment based on the article's content rather than personal
+   political views?

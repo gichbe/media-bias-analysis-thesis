@@ -14,11 +14,11 @@ from sklearn.metrics import cohen_kappa_score
 HUMAN_FILES = ("A1.csv", "A2.csv", "A3.csv")
 DIMS = ("dominant_actor", "tone", "framing", "balance", "political_lean")
 DIM_LABELS = {
-    "dominant_actor": "Dominantni akter",
-    "tone": "Ton",
-    "framing": "Uokviravanje",
-    "balance": "Balansiranost",
-    "political_lean": "Politička usmjerenost",
+    "dominant_actor": "Dominant actor",
+    "tone": "Tone",
+    "framing": "Framing",
+    "balance": "Balance",
+    "political_lean": "Political lean",
 }
 TONE_ORDER = (-2, -1, 0, 1, 2)
 BALANCE_ORDER = (0, 1, 2)

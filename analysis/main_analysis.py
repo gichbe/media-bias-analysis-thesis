@@ -225,7 +225,7 @@ def main():
     average3 = float(np.mean([v[0] for v in model_macro.values()]))
     average2 = float(np.mean([v[1] for v in model_macro.values()]))
     difficulty_summary.append({
-        "model": "Prosjek 17 modela",
+        "model": "17-model average",
         "macro_exact_3of3_pct": q(average3 * 100, 2),
         "macro_exact_2of3_pct": q(average2 * 100, 2),
         "drop_percentage_points": q((average3 - average2) * 100, 2),
@@ -236,7 +236,7 @@ def main():
     human_tone = [refs["tone"][aid] for aid in common_ids]
     hct = Counter(human_tone)
     tone_rows = [{
-        "source": "Ljudska referenca",
+        "source": "Human reference",
         **{f"tone_{value}": q(hct[value] / len(human_tone) * 100, 2) for value in TONE_ORDER},
         "mean_abs_tone": q(np.mean(np.abs(human_tone))),
         "extreme_pct": q((hct[-2] + hct[2]) / len(human_tone) * 100, 2),
@@ -263,12 +263,12 @@ def main():
             "same_magnitude_pct": q(same / len(errors) * 100, 2),
         })
     model_tone_rows = tone_rows[1:]
-    avg_tone = {"source": "Prosjek 17 modela"}
+    avg_tone = {"source": "17-model average"}
     for key in [f"tone_{value}" for value in TONE_ORDER] + ["mean_abs_tone", "extreme_pct"]:
         avg_tone[key] = q(np.mean([float(row[key]) for row in model_tone_rows]), 2)
     tone_rows.append(avg_tone)
     direction_rows.append({
-        "model": "Prosjek 17 modela",
+        "model": "17-model average",
         "errors_n": q(np.mean([row["errors_n"] for row in direction_rows]), 2),
         "toward_lower_abs_pct": q(np.mean([float(row["toward_lower_abs_pct"]) for row in direction_rows]), 2),
         "toward_higher_abs_pct": q(np.mean([float(row["toward_higher_abs_pct"]) for row in direction_rows]), 2),
@@ -281,7 +281,7 @@ def main():
     human_lean = [refs["political_lean"][aid] for aid in lean_ids]
     hc = Counter(human_lean)
     lean_rows = [{
-        "source": "Ljudska referenca",
+        "source": "Human reference",
         "neutral_pct": q(hc["neutralno"] / len(human_lean) * 100, 2),
         "unclear_pct": q(hc["nejasno"] / len(human_lean) * 100, 2),
         "directed_pct": q((len(human_lean) - hc["neutralno"] - hc["nejasno"]) / len(human_lean) * 100, 2),
@@ -304,7 +304,7 @@ def main():
             "neutral_to_directed_pct": q(np.mean([pred[i] not in ("neutralno", "nejasno") for i in neutral]) * 100, 2),
         })
     lean_rows.append({
-        "source": "Prosjek 17 modela",
+        "source": "17-model average",
         "neutral_pct": q(np.mean([float(row["neutral_pct"]) for row in lean_rows[1:]]), 2),
         "unclear_pct": q(np.mean([float(row["unclear_pct"]) for row in lean_rows[1:]]), 2),
         "directed_pct": q(np.mean([float(row["directed_pct"]) for row in lean_rows[1:]]), 2),

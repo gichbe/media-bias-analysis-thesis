@@ -11,11 +11,11 @@ import pandas as pd
 
 DIM_ORDER = ("dominant_actor", "tone", "framing", "balance", "political_lean")
 DIM_LABELS = {
-    "dominant_actor": "Dominantni akter",
-    "tone": "Ton",
-    "framing": "Uokviravanje",
-    "balance": "Balansiranost",
-    "political_lean": "Politička usmjerenost",
+    "dominant_actor": "Dominant actor",
+    "tone": "Tone",
+    "framing": "Framing",
+    "balance": "Balance",
+    "political_lean": "Political lean",
 }
 
 def save(fig, directory, name):
@@ -43,14 +43,14 @@ def main():
     ax.set_yticks(y)
     ax.set_yticklabels([DIM_LABELS[x] for x in table["dimension"]])
     ax.set_xlim(0, 1)
-    ax.set_xlabel("Krippendorffov α")
+    ax.set_xlabel("Krippendorff's α")
     ax.invert_yaxis()
     save(fig, args.output_dir, "4_1_human_agreement")
 
     table = pd.read_csv(main_dir / "llm_model_summary.csv").sort_values("macro_kappa")
     fig, ax = plt.subplots(figsize=(9, 8))
     bars = ax.barh(table["model"], table["macro_kappa"])
-    ax.set_xlabel("Makroprosjek κ")
+    ax.set_xlabel("Macro-average κ")
     ax.set_xlim(0, 0.8)
     ax.bar_label(bars, labels=[f"{x:.3f}" for x in table["macro_kappa"]], padding=3, fontsize=8)
     save(fig, args.output_dir, "4_2_macro_kappa")
@@ -76,44 +76,44 @@ def main():
     y = np.arange(len(table))
     width = 0.36
     fig, ax = plt.subplots(figsize=(10, 8.5))
-    ax.barh(y + width/2, table["macro_exact_3of3_pct"], height=width, label="Ljudski konsenzus 3/3")
-    ax.barh(y - width/2, table["macro_exact_2of3_pct"], height=width, label="Ljudski konsenzus 2/3")
+    ax.barh(y + width/2, table["macro_exact_3of3_pct"], height=width, label="3/3 human consensus")
+    ax.barh(y - width/2, table["macro_exact_2of3_pct"], height=width, label="2/3 human consensus")
     ax.set_yticks(y)
     ax.set_yticklabels(table["model"])
     ax.set_xlim(0, 100)
-    ax.set_xlabel("Tačno slaganje s referencom (%)")
+    ax.set_xlabel("Exact agreement with reference (%)")
     ax.legend()
     save(fig, args.output_dir, "4_4_consensus_difficulty")
 
     table = pd.read_csv(main_dir / "tone_distribution.csv")
-    human = table[table["source"] == "Ljudska referenca"].iloc[0]
-    avg = table[table["source"] == "Prosjek 17 modela"].iloc[0]
+    human = table[table["source"] == "Human reference"].iloc[0]
+    avg = table[table["source"] == "17-model average"].iloc[0]
     cols = ["tone_-2", "tone_-1", "tone_0", "tone_1", "tone_2"]
     labels = ["−2", "−1", "0", "+1", "+2"]
     x = np.arange(5)
     width = 0.36
     fig, ax = plt.subplots(figsize=(8.5, 5.5))
-    ax.bar(x-width/2, human[cols].astype(float), width, label="Ljudska referenca")
-    ax.bar(x+width/2, avg[cols].astype(float), width, label="Prosjek 17 modela")
+    ax.bar(x-width/2, human[cols].astype(float), width, label="Human reference")
+    ax.bar(x+width/2, avg[cols].astype(float), width, label="17-model average")
     ax.set_xticks(x)
     ax.set_xticklabels(labels)
-    ax.set_ylabel("Udio oznaka (%)")
-    ax.set_xlabel("Ton")
+    ax.set_ylabel("Share of labels (%)")
+    ax.set_xlabel("Tone")
     ax.legend()
     save(fig, args.output_dir, "4_5_tone_distribution")
 
     table = pd.read_csv(main_dir / "lean_distribution.csv")
-    human = table[table["source"] == "Ljudska referenca"].iloc[0]
-    avg = table[table["source"] == "Prosjek 17 modela"].iloc[0]
+    human = table[table["source"] == "Human reference"].iloc[0]
+    avg = table[table["source"] == "17-model average"].iloc[0]
     cols = ["neutral_pct", "unclear_pct", "directed_pct"]
-    labels = ["Neutralna", "Nejasna", "Usmjerena"]
+    labels = ["Neutral", "Unclear", "Directed"]
     x = np.arange(3)
     fig, ax = plt.subplots(figsize=(8.5, 5.5))
-    ax.bar(x-width/2, human[cols].astype(float), width, label="Ljudska referenca")
-    ax.bar(x+width/2, avg[cols].astype(float), width, label="Prosjek 17 modela")
+    ax.bar(x-width/2, human[cols].astype(float), width, label="Human reference")
+    ax.bar(x+width/2, avg[cols].astype(float), width, label="17-model average")
     ax.set_xticks(x)
     ax.set_xticklabels(labels)
-    ax.set_ylabel("Udio oznaka (%)")
+    ax.set_ylabel("Share of labels (%)")
     ax.legend()
     save(fig, args.output_dir, "4_6_lean_distribution")
 
@@ -124,7 +124,7 @@ def main():
         table = table.sort_values("dimension")
         fig, ax = plt.subplots(figsize=(8.5, 5.5))
         ax.bar([DIM_LABELS[x] for x in table["dimension"]], table["full_event_consensus_pct"])
-        ax.set_ylabel("Događaji s potpunim slaganjem (%)")
+        ax.set_ylabel("Events with complete agreement (%)")
         ax.tick_params(axis="x", rotation=25)
         save(fig, args.output_dir, "4_7_same_event_agreement")
 
@@ -133,19 +133,19 @@ def main():
         table = pd.read_csv(survey_path).sort_values("pair_id")
         x = np.arange(len(table))
         fig, axes = plt.subplots(1, 2, figsize=(12, 5.5))
-        axes[0].bar(x-width/2, table["tone_median_a"], width, label="Verzija A")
-        axes[0].bar(x+width/2, table["tone_median_b"], width, label="Verzija B")
+        axes[0].bar(x-width/2, table["tone_median_a"], width, label="Version A")
+        axes[0].bar(x+width/2, table["tone_median_b"], width, label="Version B")
         axes[0].set_xticks(x)
         axes[0].set_xticklabels(table["pair_id"])
         axes[0].set_ylim(-2.2, 2.2)
-        axes[0].set_ylabel("Medijan procjene tona")
+        axes[0].set_ylabel("Median tone rating")
         axes[0].legend()
-        axes[1].bar(x-width/2, table["bias_median_a"], width, label="Verzija A")
-        axes[1].bar(x+width/2, table["bias_median_b"], width, label="Verzija B")
+        axes[1].bar(x-width/2, table["bias_median_a"], width, label="Version A")
+        axes[1].bar(x+width/2, table["bias_median_b"], width, label="Version B")
         axes[1].set_xticks(x)
         axes[1].set_xticklabels(table["pair_id"])
         axes[1].set_ylim(0, 5.2)
-        axes[1].set_ylabel("Medijan procjene pristrasnosti")
+        axes[1].set_ylabel("Median bias rating")
         axes[1].legend()
         save(fig, args.output_dir, "4_8_survey_ab")
 
@@ -154,12 +154,12 @@ def main():
         table = pd.read_csv(selection_path).sort_values("score")
         x = np.arange(len(table))
         fig, ax = plt.subplots(figsize=(8.5, 5.5))
-        ax.bar(x-width/2, table["all_n"], width, label="Svi validno ocijenjeni naslovi")
-        ax.bar(x+width/2, table["manual_reference_n"], width, label="Prethodno ručno odabrani")
+        ax.bar(x-width/2, table["all_n"], width, label="All validly scored headlines")
+        ax.bar(x+width/2, table["manual_reference_n"], width, label="Previously selected manually")
         ax.set_xticks(x)
         ax.set_xticklabels(table["score"])
-        ax.set_xlabel("Ocjena pogodnosti")
-        ax.set_ylabel("Broj naslova")
+        ax.set_xlabel("Suitability score")
+        ax.set_ylabel("Number of headlines")
         ax.legend()
         save(fig, args.output_dir, "4_9_article_selection")
 

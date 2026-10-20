@@ -1463,7 +1463,7 @@ def evaluate_article(
         except Exception as exc:
             last_error = f"{type(exc).__name__}: {exc}"
             logger.warning(
-                "Pokušaj %d/%d nije uspio za %s: %s",
+                "Attempt %d/%d failed for %s: %s",
                 attempt,
                 max_attempts,
                 clean_field(article.get("article_id")),
@@ -1482,11 +1482,11 @@ def evaluate_article(
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="LLM annotation evaluator.")
 
-    parser.add_argument("--input", required=True, help="Ulazni CSV ili JSON")
-    parser.add_argument("--config", required=True, help="Konfiguracijski JSON")
-    parser.add_argument("--model", required=True, help="Tačan provider/model ID")
-    parser.add_argument("--model-label", default="", help="Naziv za CSV prikaz")
-    parser.add_argument("--output", required=True, help="Izlazni CSV")
+    parser.add_argument("--input", required=True, help="Input CSV or JSON")
+    parser.add_argument("--config", required=True, help="Configuration JSON")
+    parser.add_argument("--model", required=True, help="Exact provider/model ID")
+    parser.add_argument("--model-label", default="", help="Display name used in the CSV")
+    parser.add_argument("--output", required=True, help="Output CSV")
     parser.add_argument(
         "--provider",
         choices=[
@@ -1564,17 +1564,17 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--overwrite",
         action="store_true",
-        help="Obriši postojeći output umjesto resume režima",
+        help="Delete existing output instead of resuming",
     )
     parser.add_argument(
         "--dry-run",
         action="store_true",
-        help="Ne poziva model; provjeri input i ispiši prompt statistiku",
+        help="Do not call the model; validate input and print prompt statistics",
     )
     parser.add_argument(
         "--print-prompt",
         action="store_true",
-        help="Ispiši sistemski i korisnički prompt za prvi članak i izađi",
+        help="Print the system and user prompts for the first article, then exit",
     )
 
     return parser
@@ -1602,12 +1602,12 @@ def main() -> None:
         articles = articles[: args.limit]
 
     if not articles:
-        raise RuntimeError("Nema članaka za obradu.")
+        raise RuntimeError("There are no articles to process.")
 
     if args.print_prompt:
         print("===== SYSTEM PROMPT =====")
         print(SYSTEM_PROMPT)
-        print("\n===== USER PROMPT (PRVI ČLANAK) =====")
+        print("\n===== USER PROMPT (FIRST ARTICLE) =====")
         print(build_user_prompt(articles[0], args.max_body_chars))
         print(f"\nPROMPT_TEMPLATE_SHA256={PROMPT_TEMPLATE_SHA256}")
         return
@@ -1617,11 +1617,11 @@ def main() -> None:
             len(SYSTEM_PROMPT) + len(build_user_prompt(article, args.max_body_chars))
             for article in articles
         ]
-        print(f"Članaka: {len(articles)}")
+        print(f"Articles: {len(articles)}")
         print(f"Prompt template SHA256: {PROMPT_TEMPLATE_SHA256}")
-        print(f"Ukupno prompt znakova: {sum(prompt_lengths):,}")
+        print(f"Total prompt characters: {sum(prompt_lengths):,}")
         print(
-            "Gruba procjena input tokena: "
+            "Rough input-token estimate: "
             f"{round(sum(prompt_lengths) / 4.5):,}–"
             f"{round(sum(prompt_lengths) / 3.5):,}"
         )
@@ -1639,7 +1639,7 @@ def main() -> None:
     ]
 
     logger.info(
-        "Ukupno odabrano: %d | već završeno: %d | preostalo: %d",
+        "Total selected: %d | already completed: %d | remaining: %d",
         len(articles),
         len(articles) - len(pending),
         len(pending),
